@@ -1,0 +1,36 @@
+Algorithms
+Automata Logic and Games
+Computational Complexity
+Computational Models
+Computer Structure
+Data Structures
+Democratic Society, Culture, and Education
+Discrete Math
+Extended Introduction to Computer Science
+Fields and Galois Theory
+Group Theory
+Introduction to Machine Learning
+Introduction to Modern Cryptography
+Introduction to Probability Theory
+Linear Algebra 1a
+Linear Algebra 2a
+Logic for Computer Science
+Mathematical Methods in Game Theory
+Mathematics of computation according to linear algebra
+Number Theory
+Numerical Analysis
+Operating Systems
+Ordinary Differential Equations 1
+Probability for Sciences
+Programming Language Foundations
+Real Analysis 1a
+Real Analysis 2a
+Real Analysis 3
+Real Analysis 4
+Seminar in the Blockchain Technology and Applications
+Set Theory
+Software 1
+Software Project
+Theory of Functions of a Complex Variable 1
+Theory of Functions of a Complex Variable 2
+Topology

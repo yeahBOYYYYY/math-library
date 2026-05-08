@@ -4,17 +4,16 @@ repo_name: yeahBOYYYYY/math-library
 site_description: A documentation site for my project.
 site_author: Ron Mikhelman
 site_url: https://yeahBOYYYYY.github.io/math-library/
-
-nav:
-  - Home: index.md
-  - About: about.md
-  - User Guide:
-      - Installation: user-guide/configuration-options.md
-      - Usage: user-guide/getting-started.md
+copyright: Copyright &copy; 2024 - 2026 Ron Mikhelman
 
 markdown_extensions:
   - toc:
-      permalink: ""
+      permalink: "🔗"
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true  
 
 theme:
   name: material
@@ -60,10 +59,11 @@ theme:
     - navigation.prune
     - navigation.indexes
     - toc.follow
-    - toc.integrate
+    # - toc.integrate
     - navigation.top
     - search.suggest
     - search.share
+    - header.autohide
 
 plugins:
   - search
@@ -78,4 +78,25 @@ extra:
       link: https://github.com/yeahBOYYYYY
       name: GitHub
 
-copyright: Copyright &copy; 2024 - 2026 Ron Mikhelman
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/admonitions.css
+
+nav:
+  - Home: index.md
+  - Mathematics Bachelor:
+    - mathematics_bachelor/index.md
+    - Discrete Mathematics:
+      - Introduction to Set Theory: mathematics_bachelor/discrete_mathematics/introduction_to_set_theory.md
+      - Introduction to Combinatorics and Graph Theory: mathematics_bachelor/discrete_mathematics/introduction_to_combinatorics_and_graph_theory.md
+    - Analysis:
+      - Real Analysis 1: mathematics_bachelor/analysis/real_analysis_1.md
+      - Real Analysis 2: mathematics_bachelor/analysis/real_analysis_2.md
+  - Computer Science Bachelor:
+    - computer_science_bachelor/index.md
+    - Algorithms:
+      - Algorithms: computer_science_bachelor/algorithms/algorithms.md
+      - Data Structures: computer_science_bachelor/algorithms/data_structures.md
