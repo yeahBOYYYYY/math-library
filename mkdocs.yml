@@ -1,8 +1,9 @@
-site_name: My Docs
-repo_url: https://github.com/example/repository/
-repo_name: squidfunk/mkdocs-material
+site_name: Math Library
+repo_url: https://github.com/yeahBOYYYYY/math-library/
+repo_name: yeahBOYYYYY/math-library
 site_description: A documentation site for my project.
-site_author: John Doe
+site_author: Ron Mikhelman
+site_url: https://yeahBOYYYYY.github.io/math-library/
 
 nav:
   - Home: index.md
@@ -11,12 +12,9 @@ nav:
       - Installation: user-guide/configuration-options.md
       - Usage: user-guide/getting-started.md
 
-# theme: readthedocs
-
 markdown_extensions:
   - toc:
       permalink: ""
-
 
 theme:
   name: material
@@ -74,24 +72,10 @@ plugins:
       type: date
       enable_creation_date: true
 
-
-# extra:
-#   # Alternative languages for the site
-#   alternate:
-#     - name: English
-#       link: /en/ 
-#       lang: en
-#     - name: Deutsch
-#       link: /de/
-#       lang: de
-
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://fosstodon.org/@squidfunk
-      name: Mastodon
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
+      link: https://github.com/yeahBOYYYYY
       name: GitHub
 
 copyright: Copyright &copy; 2024 - 2026 Ron Mikhelman
