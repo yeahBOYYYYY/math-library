@@ -1,0 +1,97 @@
+site_name: My Docs
+repo_url: https://github.com/example/repository/
+repo_name: squidfunk/mkdocs-material
+site_description: A documentation site for my project.
+site_author: John Doe
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - User Guide:
+      - Installation: user-guide/configuration-options.md
+      - Usage: user-guide/getting-started.md
+
+# theme: readthedocs
+
+markdown_extensions:
+  - toc:
+      permalink: ""
+
+
+theme:
+  name: material
+  language: en
+  favicon: assets/favicon.ico
+  logo: assets/favicon.ico
+
+  icon:
+    repo: fontawesome/brands/github
+  
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-3
+        name: Switch to system preference
+
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.share
+
+plugins:
+  - search
+  - git-authors
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+
+
+# extra:
+#   # Alternative languages for the site
+#   alternate:
+#     - name: English
+#       link: /en/ 
+#       lang: en
+#     - name: Deutsch
+#       link: /de/
+#       lang: de
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://fosstodon.org/@squidfunk
+      name: Mastodon
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+      name: GitHub
+
+copyright: Copyright &copy; 2024 - 2026 Ron Mikhelman
