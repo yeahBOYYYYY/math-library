@@ -1,13 +1,13 @@
 :root {
-  --md-admonition-icon--def: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%231B4F72' stroke-width='5' fill='none'/%3E%3Ctext x='35' y='65' font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='%231B4F72'%3ED%3C/text%3E%3Cpath d='M65 45 H80 M65 55 H80' stroke='%231B4F72' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E)
-  --md-admonition-icon--thm: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23922B21' stroke-width='5' fill='none'/%3E%3Cpath d='M50 25 L75 70 H25 Z' stroke='%23922B21' stroke-width='4' fill='none' stroke-linejoin='round'/%3E%3Ctext x='46' y='63' font-family='Arial, sans-serif' font-size='26' font-weight='bold' fill='%23922B21'%3E!%3C/text%3E%3C/svg%3E)
-  --md-admonition-icon--lemma: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23D4AC0D' stroke-width='5' fill='none'/%3E%3Cpath d='M30 45 L42 60 H18 Z M65 40 L80 65 H50 Z' stroke='%23D4AC0D' stroke-width='4' fill='none' stroke-linejoin='round'/%3E%3Cpath d='M45 52 L49 52' stroke='%23D4AC0D' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E)
-  --md-admonition-icon--claim: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%236C3483' stroke-width='5' fill='none'/%3E%3Cpath d='M50 25 A20 20 0 1 1 34 57 L30 65 L40 61 A20 20 0 0 1 50 25' stroke='%236C3483' stroke-width='4' fill='none'/%3E%3Ctext x='43' y='52' font-family='Arial, sans-serif' font-size='22' font-weight='bold' fill='%236C3483'%3EC%3C/text%3E%3Cpath d='M50 65 V75 M40 75 H60' stroke='%236C3483' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E)
-  --md-admonition-icon--proof: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23707B7C' stroke-width='5' fill='none'/%3E%3Cpath d='M20 50 H30 M45 50 H55 M70 50 H80' stroke='%23707B7C' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M35 53 L38 57 L43 47' stroke='%23707B7C' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='60' y='42' width='15' height='15' stroke='%23707B7C' stroke-width='4' fill='none'/%3E%3C/svg%3E)
-  --md-admonition-icon--mexample: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23229954' stroke-width='5' fill='none'/%3E%3Ccircle cx='45' cy='45' r='18' stroke='%23229954' stroke-width='4' fill='none'/%3E%3Cpath d='M58 58 L72 72' stroke='%23229954' stroke-width='5' stroke-linecap='round'/%3E%3Ctext x='40' y='52' font-family='Arial, sans-serif' font-size='20' font-weight='bold' fill='%23229954'%3E1.%3C/text%3E%3C/svg%3E)
-  --md-admonition-icon--mnote: url()
+  --md-admonition-icon--def: url()
+  --md-admonition-icon--thm: url()
+  --md-admonition-icon--lemma: url()
+  --md-admonition-icon--claim: url()
+  --md-admonition-icon--proof: url()
   --md-admonition-icon--mexample: url()
-  --md-admonition-icon--exercise: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%238E44AD' stroke-width='5' fill='none'/%3E%3Cpath d='M45 40 A10 10 0 1 1 35 30 L35 25 M38 28 A10 10 0 0 0 45 40 M35 30 M38 32 A10 10 0 0 0 45 40 M42 28 A10 10 0 0 0 45 40 M32 38 A10 10 0 0 0 45 40' stroke='%238E44AD' stroke-width='4' fill='none'/%3E%3C/svg%3E)
+  --md-admonition-icon--mnote: url()
+  --md-admonition-icon--exercise: url()
+  --md-admonition-icon--solution: url()
 }
 
 /* Definition */
@@ -160,4 +160,23 @@
   background-color: rgb(255, 0, 255);
   -webkit-mask-image: var(--md-admonition-icon--exercise);
   mask-image: var(--md-admonition-icon--exercise);
+}
+
+/* Solution */
+
+.md-typeset .admonition.solution,
+.md-typeset details.solution {
+  border-color: rgb(70, 80, 90);
+}
+
+.md-typeset .solution>.admonition-title,
+.md-typeset .solution>summary {
+  background-color: rgba(70, 80, 90, 0.1);
+}
+
+.md-typeset .solution>.admonition-title::before,
+.md-typeset .solution>summary::before {
+  background-color: rgb(70, 80, 90);
+  -webkit-mask-image: var(--md-admonition-icon--solution);
+  mask-image: var(--md-admonition-icon--solution);
 }

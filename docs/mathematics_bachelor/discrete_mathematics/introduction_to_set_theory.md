@@ -22,10 +22,10 @@ Logic began its journey in ancient Greece as a branch of philosophy, but followi
 
 !!! mexample "_Example_"
 
-    We'll formalize the sentence "Today is not Tuesday, today is Monday and tommorow will be Tuesday", to do that we will define three sentences,
+    We'll formalize the sentence "Today is not Tuesday, today is Monday and tomorrow will be Tuesday", to do that we will define three sentences,
 
     $$\begin{aligned}
-    a & =\text{"Today is Tuesday"} & b & =\text{"Today is Monday"} & c & =\text{"Tommorow is Tuesday"}
+    a & =\text{"Today is Tuesday"} & b & =\text{"Today is Monday"} & c & =\text{"Tomorrow is Tuesday"}
     \end{aligned}$$
 
     Then our original sentence takes the following form, "(not $a$) and ($b$ and $c$)".
@@ -44,19 +44,23 @@ Until now we talked about atomic sentence in mathematics but we still can't expr
 
 !!! def "_Definition_: Negation Connective"
 
-    Given a sentence $A$ we express "not $A$" symbolically as $\neg A$.
+    Given a sentence $A$ we express "not $A$" symbolically as "$\neg A$".
+
+    ??? mnote "_Note_"
+
+        It is also common to use the notation "$\sim A$" or "$\overline{A}$" for negation, but we will use only "$\neg A$".
 
 !!! def "_Definition_: Conjunction Connective"
 
-    Given two sentences $A$ and $B$ we express "$A$ and $B$" symbolically as $A \land B$.
+    Given two sentences $A$ and $B$ we express "$A$ and $B$" symbolically as "$A \land B$".
 
 !!! def "_Definition_: Disjunction Connective"
 
-    Given two sentences $A$ and $B$ we express "$A$ or $B$" symbolically as $A \lor B$.
+    Given two sentences $A$ and $B$ we express "$A$ or $B$" symbolically as "$A \lor B$".
 
 !!! def "_Definition_: Implication Connective"
 
-    Given two sentences $A$ and $B$ we express "if $A$ then $B$" symbolically as $A \implies B$, and we call $A$ the "**Prefix**" and $B$ the "**Suffix**" of the sentence.
+    Given two sentences $A$ and $B$ we express "if $A$ then $B$" symbolically as "$A \implies B$", and we call $A$ the "**Prefix**" and $B$ the "**Suffix**" of the sentence.
 
 ##### Sentence
 
@@ -85,6 +89,7 @@ Now after defining the atomic sentences and the connectives we can define what a
     - $A\implies$
     - $A\land\lor B$
     - $A\land B\implies C$
+    - $A \neg$
     
     Which are phrases without mathematical meaning or with dual meaning are not considered as sentence in propositional logic, and such phrases are called "**abuse of notation**".
 
@@ -120,9 +125,21 @@ Now that we have sentences in our mathematical language we want to give them mea
 
     $$\left(V\left(A\right) = \false\right) \implies \left(V\left(A \implies B\right) = \true\right)$$
 
-!!! exercise "_Exercise_"
+???+ exercise "_Exercise_"
 
     Formalize and determine if the following sentence is true, false or not a sentence, "Today is Tuesday and Tomorrow will also be Tuesday".
+
+    ??? solution
+
+        We will define two sentences,
+
+        $$\begin{aligned}
+        A & =\text{"Today is Tuesday"} & B & =\text{"Tomorrow is Tuesday"}
+        \end{aligned}$$
+
+        Then our original sentence is $A \land B$, but we also note that only of them can be true by our understanding of the week days, hence we can that
+
+        $$V\left(A\land B\right) = \false$$
 
 !!! claim "_Claim_"
 
@@ -137,3 +154,65 @@ Now that we have sentences in our mathematical language we want to give them mea
         assignments of truth values to $A_1, \ldots, A_n$.
 
 Now because we know that there are only finite number of assignments possible for a collection of atomic sentences, we can create a table that summarizes the truthfulness of each logical connective!
+
+!!! def "_Definition_: Truth Table"
+
+    A table that summarizes the truth value of a complex sentence given a change in the truth assignment of each of the atomic sentences that he's composed of.
+
+!!! mexample "_Example_: Truth Tables For the Logical Connectives"
+
+    Let $A$ and $B$ be atomic sentences then,
+
+    ??? mexample "_Example_: Negation Connective"
+
+        | $A$      | $\neg A$ |
+        |----------|----------|
+        | $\true$  | $\false$ |
+        | $\false$ | $\true$  |
+    
+    ??? mexample "_Example_: Conjunction Connective"
+
+        | $A$      | $B$      | $A\land B$ |
+        |----------|----------|---------------|
+        | $\true$  | $\true$  | $\true$       |
+        | $\true$  | $\false$ | $\false$      |
+        | $\false$ | $\true$  | $\false$      |
+        | $\false$ | $\false$ | $\false$      |
+
+    ??? mexample "_Example_: Disjunction Connective"
+
+        | $A$      | $B$      | $A\lor B$ |
+        |----------|----------|---------------|
+        | $\true$  | $\true$  | $\true$       |
+        | $\true$  | $\false$ | $\true$       |
+        | $\false$ | $\true$  | $\true$       |
+        | $\false$ | $\false$ | $\false$      |
+
+    ??? mexample "_Example_: Implication Connective"
+
+        | $A$      | $B$      | $A\implies B$ |
+        |----------|----------|---------------|
+        | $\true$  | $\true$  | $\true$       |
+        | $\true$  | $\false$ | $\false$      |
+        | $\false$ | $\true$  | $\true$       |
+        | $\false$ | $\false$ | $\true$       |
+
+???+ exercise "_Exercise_: Deducing From Truth Tables"
+
+    Try to deduce the truth assignment from the following given data,
+
+    1. Given that $A \lor \left(\neg B\right)$ is a false sentence, what can we deduce?
+          1. $A$ is true, $B$ is true.
+          2. $A$ is true, $B$ is false.
+          3. $A$ can't be determined, $B$ is true.
+          4. $A$ is false, $B$ is true.
+          5. $A$ is false, $B$ can't be determined.
+    2. Given that $A$ and $B$ are both false, what can we infer about $\left(A\implies B\right) \land \left(B\implies A\right)$?
+          1. It's a true sentence.
+          2. It's a false sentence.
+          3. It can't be determined.
+
+    ??? solution
+
+        1. The solution is answer "**d**", by the truth table of the disjunction connective we know that for the result to be false both the sentenced being or-ed must be false themselves, hence $A$ is false, and $\neg B$ is false, then by the truth table of the negation connective we know that for $\neg B$ to be false it must follow that $B$ is true.
+        2. The solution is answer "**a**". First of all we need to look at $A \implies B$ and $B \implies A$ separately to infer about the whole complex sentence, since we know that $A$ is false we know by the truth table of the implication connective that $A \implies B$ is true, likewise because $B$ is false we know by the truth table of the implication connective that $B \implies A$ is true. Now, we can see that by the truth table of the conjunction connective that $\left(A\implies B\right) \land \left(B\implies A\right)$ must be true.
