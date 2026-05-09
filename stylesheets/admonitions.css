@@ -1,0 +1,182 @@
+:root {
+  --md-admonition-icon--def: url()
+  --md-admonition-icon--thm: url()
+  --md-admonition-icon--lemma: url()
+  --md-admonition-icon--claim: url()
+  --md-admonition-icon--proof: url()
+  --md-admonition-icon--mexample: url()
+  --md-admonition-icon--mnote: url()
+  --md-admonition-icon--exercise: url()
+  --md-admonition-icon--solution: url()
+}
+
+/* Definition */
+
+.md-typeset .admonition.def,
+.md-typeset details.def {
+  border-color: rgb(40, 30, 225);
+}
+
+.md-typeset .def>.admonition-title,
+.md-typeset .def>summary {
+  background-color: rgba(40, 30, 225, 0.1);
+}
+
+.md-typeset .def>.admonition-title::before,
+.md-typeset .def>summary::before {
+  background-color: rgb(40, 30, 225);
+  -webkit-mask-image: var(--md-admonition-icon--def);
+  mask-image: var(--md-admonition-icon--def);
+}
+
+/* Theorem */
+
+.md-typeset .admonition.thm,
+.md-typeset details.thm {
+  border-color: rgb(130, 20, 20);
+}
+
+.md-typeset .thm>.admonition-title,
+.md-typeset .thm>summary {
+  background-color: rgba(130, 20, 20, 0.1);
+}
+
+.md-typeset .thm>.admonition-title::before,
+.md-typeset .thm>summary::before {
+  background-color: rgb(130, 20, 20);
+  -webkit-mask-image: var(--md-admonition-icon--thm);
+  mask-image: var(--md-admonition-icon--thm);
+}
+
+/* Lemma */
+
+.md-typeset .admonition.lemma,
+.md-typeset details.lemma {
+  border-color: rgb(210, 120, 20);
+}
+
+.md-typeset .lemma>.admonition-title,
+.md-typeset .lemma>summary {
+  background-color: rgba(210, 120, 20, 0.1);
+}
+
+.md-typeset .lemma>.admonition-title::before,
+.md-typeset .lemma>summary::before {
+  background-color: rgb(210, 120, 20);
+  -webkit-mask-image: var(--md-admonition-icon--lemma);
+  mask-image: var(--md-admonition-icon--lemma);
+}
+
+/* Claim */
+
+.md-typeset .admonition.claim,
+.md-typeset details.claim {
+  border-color: rgb(105, 40, 155);
+}
+
+.md-typeset .claim>.admonition-title,
+.md-typeset .claim>summary {
+  background-color: rgba(105, 40, 155, 0.1);
+}
+
+.md-typeset .claim>.admonition-title::before,
+.md-typeset .claim>summary::before {
+  background-color: rgb(105, 40, 155);
+  -webkit-mask-image: var(--md-admonition-icon--claim);
+  mask-image: var(--md-admonition-icon--claim);
+}
+
+/* Proof */
+
+.md-typeset .admonition.proof,
+.md-typeset details.proof {
+  border-color: rgb(70, 80, 90);
+}
+
+.md-typeset .proof>.admonition-title,
+.md-typeset .proof>summary {
+  background-color: rgba(70, 80, 90, 0.1);
+}
+
+.md-typeset .proof>.admonition-title::before,
+.md-typeset .proof>summary::before {
+  background-color: rgb(70, 80, 90);
+  -webkit-mask-image: var(--md-admonition-icon--proof);
+  mask-image: var(--md-admonition-icon--proof);
+}
+
+/* Math Example */
+
+.md-typeset .admonition.mexample,
+.md-typeset details.mexample {
+  border-color: rgb(43, 155, 70);
+}
+
+.md-typeset .mexample>.admonition-title,
+.md-typeset .mexample>summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+
+.md-typeset .mexample>.admonition-title::before,
+.md-typeset .mexample>summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--mexample);
+  mask-image: var(--md-admonition-icon--mexample);
+}
+
+/* Math Note */
+
+.md-typeset .admonition.mnote,
+.md-typeset details.mnote {
+  border-color: rgb(0, 80, 80);
+}
+
+.md-typeset .mnote>.admonition-title,
+.md-typeset .mnote>summary {
+  background-color: rgba(0, 80, 80, 0.1);
+}
+
+.md-typeset .mnote>.admonition-title::before,
+.md-typeset .mnote>summary::before {
+  background-color: rgb(0, 80, 80);
+  -webkit-mask-image: var(--md-admonition-icon--mnote);
+  mask-image: var(--md-admonition-icon--mnote);
+}
+
+/* Exercise */
+
+.md-typeset .admonition.exercise,
+.md-typeset details.exercise {
+  border-color: rgb(255, 0, 255);
+}
+
+.md-typeset .exercise>.admonition-title,
+.md-typeset .exercise>summary {
+  background-color: rgba(255, 0, 255, 0.1);
+}
+
+.md-typeset .exercise>.admonition-title::before,
+.md-typeset .exercise>summary::before {
+  background-color: rgb(255, 0, 255);
+  -webkit-mask-image: var(--md-admonition-icon--exercise);
+  mask-image: var(--md-admonition-icon--exercise);
+}
+
+/* Solution */
+
+.md-typeset .admonition.solution,
+.md-typeset details.solution {
+  border-color: rgb(70, 80, 90);
+}
+
+.md-typeset .solution>.admonition-title,
+.md-typeset .solution>summary {
+  background-color: rgba(70, 80, 90, 0.1);
+}
+
+.md-typeset .solution>.admonition-title::before,
+.md-typeset .solution>summary::before {
+  background-color: rgb(70, 80, 90);
+  -webkit-mask-image: var(--md-admonition-icon--solution);
+  mask-image: var(--md-admonition-icon--solution);
+}
