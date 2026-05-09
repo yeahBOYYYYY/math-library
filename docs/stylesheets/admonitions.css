@@ -1,17 +1,163 @@
 :root {
-  --md-admonition-icon--pied-piper: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M244 246c-3.2-2-6.3-2.9-10.1-2.9-6.6 0-12.6 3.2-19.3 3.7l1.7 4.9zm135.9 197.9c-19 0-64.1 9.5-79.9 19.8l6.9 45.1c35.7 6.1 70.1 3.6 106-9.8-4.8-10-23.5-55.1-33-55.1zM340.8 177c6.6 2.8 11.5 9.2 22.7 22.1 2-1.4 7.5-5.2 7.5-8.6 0-4.9-11.8-13.2-13.2-23 11.2-5.7 25.2-6 37.6-8.9 68.1-16.4 116.3-52.9 146.8-116.7C548.3 29.3 554 16.1 554.6 2l-2 2.6c-28.4 50-33 63.2-81.3 100-31.9 24.4-69.2 40.2-106.6 54.6l-6.3-.3v-21.8c-19.6 1.6-19.7-14.6-31.6-23-18.7 20.6-31.6 40.8-58.9 51.1-12.7 4.8-19.6 10-25.9 21.8 34.9-16.4 91.2-13.5 98.8-10zM555.5 0l-.6 1.1-.3.9.6-.6zm-59.2 382.1c-33.9-56.9-75.3-118.4-150-115.5l-.3-6c-1.1-13.5 32.8 3.2 35.1-31l-14.4 7.2c-19.8-45.7-8.6-54.3-65.5-54.3-14.7 0-26.7 1.7-41.4 4.6 2.9 18.6 2.2 36.7-10.9 50.3l19.5 5.5c-1.7 3.2-2.9 6.3-2.9 9.8 0 21 42.8 2.9 42.8 33.6 0 18.4-36.8 60.1-54.9 60.1-8 0-53.7-50-53.4-60.1l.3-4.6 52.3-11.5c13-2.6 12.3-22.7-2.9-22.7-3.7 0-43.1 9.2-49.4 10.6-2-5.2-7.5-14.1-13.8-14.1-3.2 0-6.3 3.2-9.5 4-9.2 2.6-31 2.9-21.5 20.1L15.9 298.5c-5.5 1.1-8.9 6.3-8.9 11.8 0 6 5.5 10.9 11.5 10.9 8 0 131.3-28.4 147.4-32.2 2.6 3.2 4.6 6.3 7.8 8.6 20.1 14.4 59.8 85.9 76.4 85.9 24.1 0 58-22.4 71.3-41.9 3.2-4.3 6.9-7.5 12.4-6.9.6 13.8-31.6 34.2-33 43.7-1.4 10.2-1 35.2-.3 41.1 26.7 8.1 52-3.6 77.9-2.9 4.3-21 10.6-41.9 9.8-63.5l-.3-9.5c-1.4-34.2-10.9-38.5-34.8-58.6-1.1-1.1-2.6-2.6-3.7-4 2.2-1.4 1.1-1 4.6-1.7 88.5 0 56.3 183.6 111.5 229.9 33.1-15 72.5-27.9 103.5-47.2-29-25.6-52.6-45.7-72.7-79.9zm-196.2 46.1v27.2l11.8-3.4-2.9-23.8zm-68.7-150.4l24.1 61.2 21-13.8-31.3-50.9zm84.4 154.9l2 12.4c9-1.5 58.4-6.6 58.4-14.1 0-1.4-.6-3.2-.9-4.6-26.8 0-36.9 3.8-59.5 6.3z"/></svg>')
+  --md-admonition-icon--def: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%231B4F72' stroke-width='5' fill='none'/%3E%3Ctext x='35' y='65' font-family='Arial, sans-serif' font-size='40' font-weight='bold' fill='%231B4F72'%3ED%3C/text%3E%3Cpath d='M65 45 H80 M65 55 H80' stroke='%231B4F72' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E)
+  --md-admonition-icon--thm: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23922B21' stroke-width='5' fill='none'/%3E%3Cpath d='M50 25 L75 70 H25 Z' stroke='%23922B21' stroke-width='4' fill='none' stroke-linejoin='round'/%3E%3Ctext x='46' y='63' font-family='Arial, sans-serif' font-size='26' font-weight='bold' fill='%23922B21'%3E!%3C/text%3E%3C/svg%3E)
+  --md-admonition-icon--lemma: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23D4AC0D' stroke-width='5' fill='none'/%3E%3Cpath d='M30 45 L42 60 H18 Z M65 40 L80 65 H50 Z' stroke='%23D4AC0D' stroke-width='4' fill='none' stroke-linejoin='round'/%3E%3Cpath d='M45 52 L49 52' stroke='%23D4AC0D' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E)
+  --md-admonition-icon--claim: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%236C3483' stroke-width='5' fill='none'/%3E%3Cpath d='M50 25 A20 20 0 1 1 34 57 L30 65 L40 61 A20 20 0 0 1 50 25' stroke='%236C3483' stroke-width='4' fill='none'/%3E%3Ctext x='43' y='52' font-family='Arial, sans-serif' font-size='22' font-weight='bold' fill='%236C3483'%3EC%3C/text%3E%3Cpath d='M50 65 V75 M40 75 H60' stroke='%236C3483' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E)
+  --md-admonition-icon--proof: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23707B7C' stroke-width='5' fill='none'/%3E%3Cpath d='M20 50 H30 M45 50 H55 M70 50 H80' stroke='%23707B7C' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M35 53 L38 57 L43 47' stroke='%23707B7C' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='60' y='42' width='15' height='15' stroke='%23707B7C' stroke-width='4' fill='none'/%3E%3C/svg%3E)
+  --md-admonition-icon--mexample: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23229954' stroke-width='5' fill='none'/%3E%3Ccircle cx='45' cy='45' r='18' stroke='%23229954' stroke-width='4' fill='none'/%3E%3Cpath d='M58 58 L72 72' stroke='%23229954' stroke-width='5' stroke-linecap='round'/%3E%3Ctext x='40' y='52' font-family='Arial, sans-serif' font-size='20' font-weight='bold' fill='%23229954'%3E1.%3C/text%3E%3C/svg%3E)
+  --md-admonition-icon--mnote: url()
+  --md-admonition-icon--mexample: url()
+  --md-admonition-icon--exercise: url(data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%238E44AD' stroke-width='5' fill='none'/%3E%3Cpath d='M45 40 A10 10 0 1 1 35 30 L35 25 M38 28 A10 10 0 0 0 45 40 M35 30 M38 32 A10 10 0 0 0 45 40 M42 28 A10 10 0 0 0 45 40 M32 38 A10 10 0 0 0 45 40' stroke='%238E44AD' stroke-width='4' fill='none'/%3E%3C/svg%3E)
 }
-.md-typeset .admonition.pied-piper,
-.md-typeset details.pied-piper {
+
+/* Definition */
+
+.md-typeset .admonition.def,
+.md-typeset details.def {
+  border-color: rgb(40, 30, 225);
+}
+
+.md-typeset .def>.admonition-title,
+.md-typeset .def>summary {
+  background-color: rgba(40, 30, 225, 0.1);
+}
+
+.md-typeset .def>.admonition-title::before,
+.md-typeset .def>summary::before {
+  background-color: rgb(40, 30, 225);
+  -webkit-mask-image: var(--md-admonition-icon--def);
+  mask-image: var(--md-admonition-icon--def);
+}
+
+/* Theorem */
+
+.md-typeset .admonition.thm,
+.md-typeset details.thm {
+  border-color: rgb(130, 20, 20);
+}
+
+.md-typeset .thm>.admonition-title,
+.md-typeset .thm>summary {
+  background-color: rgba(130, 20, 20, 0.1);
+}
+
+.md-typeset .thm>.admonition-title::before,
+.md-typeset .thm>summary::before {
+  background-color: rgb(130, 20, 20);
+  -webkit-mask-image: var(--md-admonition-icon--thm);
+  mask-image: var(--md-admonition-icon--thm);
+}
+
+/* Lemma */
+
+.md-typeset .admonition.lemma,
+.md-typeset details.lemma {
+  border-color: rgb(210, 120, 20);
+}
+
+.md-typeset .lemma>.admonition-title,
+.md-typeset .lemma>summary {
+  background-color: rgba(210, 120, 20, 0.1);
+}
+
+.md-typeset .lemma>.admonition-title::before,
+.md-typeset .lemma>summary::before {
+  background-color: rgb(210, 120, 20);
+  -webkit-mask-image: var(--md-admonition-icon--lemma);
+  mask-image: var(--md-admonition-icon--lemma);
+}
+
+/* Claim */
+
+.md-typeset .admonition.claim,
+.md-typeset details.claim {
+  border-color: rgb(105, 40, 155);
+}
+
+.md-typeset .claim>.admonition-title,
+.md-typeset .claim>summary {
+  background-color: rgba(105, 40, 155, 0.1);
+}
+
+.md-typeset .claim>.admonition-title::before,
+.md-typeset .claim>summary::before {
+  background-color: rgb(105, 40, 155);
+  -webkit-mask-image: var(--md-admonition-icon--claim);
+  mask-image: var(--md-admonition-icon--claim);
+}
+
+/* Proof */
+
+.md-typeset .admonition.proof,
+.md-typeset details.proof {
+  border-color: rgb(70, 80, 90);
+}
+
+.md-typeset .proof>.admonition-title,
+.md-typeset .proof>summary {
+  background-color: rgba(70, 80, 90, 0.1);
+}
+
+.md-typeset .proof>.admonition-title::before,
+.md-typeset .proof>summary::before {
+  background-color: rgb(70, 80, 90);
+  -webkit-mask-image: var(--md-admonition-icon--proof);
+  mask-image: var(--md-admonition-icon--proof);
+}
+
+/* Math Example */
+
+.md-typeset .admonition.mexample,
+.md-typeset details.mexample {
   border-color: rgb(43, 155, 70);
 }
-.md-typeset .pied-piper > .admonition-title,
-.md-typeset .pied-piper > summary {
+
+.md-typeset .mexample>.admonition-title,
+.md-typeset .mexample>summary {
   background-color: rgba(43, 155, 70, 0.1);
 }
-.md-typeset .pied-piper > .admonition-title::before,
-.md-typeset .pied-piper > summary::before {
+
+.md-typeset .mexample>.admonition-title::before,
+.md-typeset .mexample>summary::before {
   background-color: rgb(43, 155, 70);
-  -webkit-mask-image: var(--md-admonition-icon--pied-piper);
-          mask-image: var(--md-admonition-icon--pied-piper);
+  -webkit-mask-image: var(--md-admonition-icon--mexample);
+  mask-image: var(--md-admonition-icon--mexample);
+}
+
+/* Math Note */
+
+.md-typeset .admonition.mnote,
+.md-typeset details.mnote {
+  border-color: rgb(0, 80, 80);
+}
+
+.md-typeset .mnote>.admonition-title,
+.md-typeset .mnote>summary {
+  background-color: rgba(0, 80, 80, 0.1);
+}
+
+.md-typeset .mnote>.admonition-title::before,
+.md-typeset .mnote>summary::before {
+  background-color: rgb(0, 80, 80);
+  -webkit-mask-image: var(--md-admonition-icon--mnote);
+  mask-image: var(--md-admonition-icon--mnote);
+}
+
+/* Exercise */
+
+.md-typeset .admonition.exercise,
+.md-typeset details.exercise {
+  border-color: rgb(255, 0, 255);
+}
+
+.md-typeset .exercise>.admonition-title,
+.md-typeset .exercise>summary {
+  background-color: rgba(255, 0, 255, 0.1);
+}
+
+.md-typeset .exercise>.admonition-title::before,
+.md-typeset .exercise>summary::before {
+  background-color: rgb(255, 0, 255);
+  -webkit-mask-image: var(--md-admonition-icon--exercise);
+  mask-image: var(--md-admonition-icon--exercise);
 }
